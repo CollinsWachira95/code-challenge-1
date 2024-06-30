@@ -1,5 +1,6 @@
+//Deine Function
 function getStudentGrade(marks) {
-
+//Finding the grade by converting the marks to grades
     let grade;
     if (marks > 79){
         grade = 'A';
@@ -16,6 +17,7 @@ function getStudentGrade(marks) {
     else {
         grade = 'E';
     }
+//The Results
     console.log(`The grades for the marks ${marks}is : ${grade}`);
 }
 
