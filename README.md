@@ -1,34 +1,40 @@
-TITLE: CODE-CHALLENGE-1<br>
-DESCRIPTION<br>
-The assigment was a code challenge concerning three questions:
-1: The first question was to create a program that changes marks of a student into grades:-
+# Interactive JavaScript Challenges
 
-Write a function that prompts the user to input student marks. The input should be between 0 and 100. The output should correspond the correct grade, as shown below: 
+This project implements three interactive JavaScript functions designed to be used from a web page. Users can interact with the functions using buttons, and the results are displayed in the console.
 
-        A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
-2 : The second question was to create a program that checks the speed of a car and if it exceeds the speed limit and the necessary action to take if a driver exceeds the speed limit either to revoke their license or charge them:-
+**Author:** Collins Wachira
 
-Write a program that takes the speed of a car as input e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
+**Functionalities:**
 
-   > For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
-3: The question was to create a program that calculates the gross salary by calculating the tax and benefits and the deductions one is supposed to pay:-
+1. **Student Grade Generator:**
+    * This function prompts the user to enter a student's marks (0-100).
+    * It validates the input to ensure it's within the valid range.
+    * Based on the entered marks, the function calculates the corresponding grade (A, B, C, D, or E).
+    * The calculated grade is then displayed in the console.
 
-Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
+2. **Speed Detector:**
+    * This function prompts the user to enter the speed of a car (in km/h).
+    * It checks the entered speed against a speed limit of 70 km/h.
+    * If the speed is within the limit, the function displays "Ok" in the console.
+    * If the speed exceeds the limit, the function calculates the number of demerit points based on increments of 5 km/h above the limit (1 demerit point per 5 km/h).
+    * The function then displays the number of demerit points in the console.
+    * If the demerit points exceed 12, the function displays "License suspended" in the console.
 
-NB: Use KRA, NHIF, and NSSF values provided in the link below.
+3. **Net Salary Calculator (Toy Problem):**
+    * This function is designed to demonstrate the concept of net salary calculation.
+    * It prompts the user to enter the basic salary and benefits.
+    * It utilizes placeholder functions for calculating Payee (income tax), NHIF (National Hospital Insurance Fund) deduction, and NSSF (National Social Security Fund) deduction. 
+        * **Note:** These placeholder functions use fixed rates for demonstration purposes only. In a real-world application, you would need to integrate with relevant APIs or libraries to retrieve accurate tax and social security calculation logic.
+    * The function calculates the gross salary by adding the basic salary and benefits.
+    * It then subtracts the calculated deductions (payee, NHIF, NSSF) from the gross salary to arrive at the net salary.
+    * Finally, the function displays the breakdown of Payee, NHIF deduction, NSSF deduction, Gross Salary, and Net Salary in the console.
 
-TO GO THE CODE YOU SHOULD HAVE THE FOLLOWING:
-To have a github account and a terminal or console to run the code.
+**Running the Project:**
 
-INSTALLATION OF THE CODE
-You can clone the code of the project from the github repo and clone it to your laptop
-You can open the file in your terminal or console
+1. Save the `index.html` and `script.js` files in the same directory.
+2. Open the `index.html` file in a web browser.
+3. Click on the buttons to interact with each function and see the results displayed in the console (usually accessed by pressing F12 or right-clicking and selecting "Inspect").
 
-RUNNING THE APPLICATION
-On the end of the project, the functions have already been called so its just to input the values in each function and run the code on your terminal or on a console .
-You can use the console in google chrome by going to the settings and go to the chrome developer tools and you will find the console there you just copr the code and run the tests.
+**Note:**
 
-AUTHOR
-Collins Wachira
-
-
+This project provides a basic framework for interactive JavaScript functionalities. Remember to replace the placeholder deduction calculation functions in the Net Salary Calculator with calls to the appropriate APIs or libraries based on your specific requirements for accurate tax and social security calculations.
